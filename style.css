@@ -1,0 +1,455 @@
+@font-face {
+ src: url("https://rejouice.com/assets/fonts/Rejouice-Headline.ttf");
+ font-family: head;
+}
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face{
+    src: url("https://rejouice.com/assets/fonts/NBInternationalProBoo.woff2");
+    font-family: rejoy;
+}
+html{
+    font-size: 62.5%;
+}
+
+main{
+    width: 100vw;
+position: relative;
+
+overflow-x: hidden;
+}
+menu{
+    width: 100vw;
+    height: 65vh;
+    position: absolute;
+    top: -65vh;
+    background-color: #ff5f38;
+    z-index: 999;
+    padding: 3rem 6rem;
+    padding-bottom: 1.5rem;
+    
+}
+menu .top{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+menu h4{
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+menu .mid{
+    width: 100%;
+    height: 80%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menubutton:hover{
+    text-decoration: underline;
+}
+menu video{
+    width: 23rem;
+    height: 15rem;
+    object-fit: cover;
+}
+menu h1{
+    font-size: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+.closebutton:hover{
+    text-decoration: underline;
+}
+menu h1:hover{
+    text-decoration: underline;
+}
+menu .bottom{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top:2px solid black ;
+}
+menu sup{
+    font-size: 1rem;
+}
+menu .bottom h4{
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+menu .bottom ul{
+    display: flex;
+    gap: 2.5rem;
+}
+nav{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+    position: relative;
+    z-index: 99;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+nav h1{
+    font-size: 2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.bcvid{
+    
+position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+@media (min-aspect-ratio:16/8){
+    .bcvid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/8){
+    .bcvid{
+        width: auto;
+        height: 100vh;
+    }
+}
+.pg1{
+    width: 100vw;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.144);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 4rem;
+    color: white;
+}
+.pg1 h1{
+    font-size: 25vw;
+    font-family: head;
+    font-weight: 300;
+    
+}
+.pg2{
+    height: 100vh;
+    width: 100vw;
+    padding: 5rem 3rem;
+    background-color: #faf8f3;
+    position: relative;
+    z-index: 9;
+}
+.pg2 .top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    
+}
+.pg2 h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.pg2 .bottom{
+    width: 100%;
+    height: 80%;
+    padding: 2rem 0;
+    
+}
+.pg2 p{
+    font-size: 4.5rem;
+}
+.pg3{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    background-color: #faf8f3;
+}
+.pg3 ul{
+    text-align: center;
+}
+.pg3 h4{
+    font-size: 1.4rem;
+    font-weight: 300;
+padding-bottom: 2rem;
+
+}
+.pg3 span{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding:.3rem ;
+    border-radius: 50px;
+}
+.pg3 h1{
+    font-size: 5.5rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.pg4{
+    width: 100vw;
+    height: 100vh;
+    padding:  3rem;
+    position: relative;
+    z-index: 9;
+    background-color: #faf8f3;
+
+}
+.pg4 .top{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.pg4 h3{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.pg4 .bottom{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pg4 .bottom .img{
+    height: 40rem;
+    width: 31rem;
+    background-size: cover;
+    background-position: center;
+}
+.pg4 .img1{
+    background-image: url("https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format");
+}
+.pg4 .img2{
+    background-image: url("https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format");
+}
+.pg4 .img3{
+    background-image: url("https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format");
+}
+.pg4 video{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.pg4 .img:hover video{
+    opacity: 1;
+}
+.pg5,.pg5-1{
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem;
+    position: relative;
+    z-index: 9;
+    background-color: #faf8f3;
+
+}
+.pg5 .top, .pg5-1 .top{
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid black;
+    padding-top: 2rem;
+}
+.pg5 h3, .pg5-1 h3{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.pg5 .bottom, .pg5-1 .bottom{
+    width: 100%;
+    height: 80%;
+    padding: 2rem 0;
+}
+.pg5 p, .pg5-1 p{
+    font-size: 5.5rem;
+}
+.pg6{
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem;
+    padding-top: 5rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+    background-color: #faf8f3;
+
+}
+.pg6 .top{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid black;
+}
+.pg6 h1{
+    font-size: 7rem;
+    font-weight: 500;
+}
+.pg6 .bottom{
+    width: 110vw;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    
+}
+.pg6 img{
+    height: 85%;
+    width: 35rem;
+    margin-left: 2rem;
+}
+.pg6 .large{
+    height: 130%;
+}
+.pg6 .medium{
+    height: 120%;
+}
+footer{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: #0e0e0e;
+    position: relative;
+    z-index: 9;
+}
+.footer1{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.footer1 .top{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+.footer1 h3{
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+.footer1 span{
+    font-size: 1.2rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 4px;
+}
+.footer1 h4{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.footermenu{
+    display: flex;
+    gap: 4rem;
+}
+.footer1 .bottom{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer1 .email{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.footer2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.footer2 h1{
+    font-size: 10vw;
+    font-family: head;
+}
+.watchreel{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #ff5f38;
+    position: fixed;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    z-index: 1;
+  cursor: pointer;
+}
+
+.loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2a2a2a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    gap: 1rem;
+}
+.video{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    z-index: 9998;
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    
+}
+.video video{
+    height: 90%;
+    width: 90%;
+}
+.video div{
+    width: 100%;
+    height: 15%;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.video i{
+    cursor: pointer;
+}
+.text{
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}

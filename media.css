@@ -1,0 +1,67 @@
+@media (max-width:900px) {
+    html, body{
+        font-size: 52.5%;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    nav{
+        padding: 0 5%;
+    }
+    main{
+        width: 100vw ;
+    }
+    
+    
+    .pg2{
+        height: fit-content;
+    }
+    .pg2 .top{
+        height: 10vh;
+    }
+    .pg3{
+        height: 35vh;
+    }
+    .pg4{
+        height: fit-content;
+    }
+    .pg4 .bottom{
+        flex-direction: column;
+    }
+    .pg4 .bottom .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
+    }
+    .pg4 video{
+        opacity: 1;
+        height: 75%;
+    }
+    .pg5{
+        height: fit-content;
+    padding-top: 5rem;
+    }
+    
+    .pg5 .top{
+        height: 9rem;
+    }
+    .pg6{
+        height: fit-content;
+    }
+    .pg7{
+        height: 25vh;
+    }
+    footer{
+        height: 55vh;
+    }
+    menu{
+        height: 45vh;
+    }
+}
+@media (max-width:600px) {
+html{
+    font-size: 42.5%;
+}
+}
